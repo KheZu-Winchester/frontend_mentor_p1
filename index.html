@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      margin: 250px ;
+      display: flex;
+      justify-content: center;
+      background-color: hsl(30, 38%, 92%);
+      
+    }
+    .img{
+      border: 1px  black;
+      border-radius: 10px;
+      height: 400px;
+      width: 600px;
+      display: flex;
+      justify-content: center;
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 3px ;
+    }
+    .font-f{
+      font-family: 'Fraunces';
+    }
+    .font-m{
+      font-family: 'Montserrat';
+    }
+    .bold{
+      font-weight: bolder;
+    }
+    .med{
+      font-weight: 500;
+    }
+    .grayish{
+      color: hsl(228, 12%, 48%);
+    }
+    .letter-spac{
+      letter-spacing: 3px;
+    }
+    .word-spac{
+      word-spacing: 10px;
+    }
+    .detail{
+      padding: 10px 25px;
+    }
+    .flax{
+      display: flex;
+      align-items: center;
+    }
+    .deco{
+      text-decoration: line-through;
+    }
+    .mgb{
+      margin: 20px auto;
+    }
+    .color{
+     color: hsl(158, 36%, 37%); 
+    }
+    .back
+    {
+      background-color: hsl(158, 36%, 37%);
+      height: 40px;
+      width: 285px;
+      border-style: none;
+    }
+    .white{
+      color: hsl(0, 0%, 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+     <img src="./images/image-product-desktop.jpg" alt="" style="height: 100%;width: 50%;">
+      <div class=" detail">
+        <h3 class="font-m grayish letter-spac bold">Perfume</h3>
+
+        <h2 class=" font-f word-spac bold">Gabrielle<br> Essence Eau<br> De Parfum</h2>
+
+          <p class=" med grayish font-m">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p> 
+            <div class="flax">
+              <div>
+              <h2 class=" font-f bold color" style="margin-right: 20px;">$149.99</h3></div>
+              <div>
+              <p class=" font-m med deco mgb grayish">$169.99</p>
+            </div>
+            </div>
+            <div>
+            
+              <button class="back white"><i class="fa-solid fa-cart-shopping white" style="margin-right:10px ;"></i>Add to Cart</button>
+            </div>
+      </div>
+  </div>
+</body>
+</html>
